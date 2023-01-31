@@ -43,7 +43,7 @@ function App() {
           <Title />
         </div>
         <div className='flex flex-row items-center justify-center w-full mt-24'>
-            <Input placeholder={'Write product description...'} onChange={onChange}/>
+            <Input placeholder={'Describe your product...'} onChange={onChange}/>
         </div>
         <div className='flex flex-row items-center justify-center w-full mt-12'>
           <Button onClick={onClick}/>
