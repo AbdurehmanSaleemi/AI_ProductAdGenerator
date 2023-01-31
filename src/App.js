@@ -7,7 +7,7 @@ import React from 'react';
 const { Configuration, OpenAIApi } = require("openai");
 
 const configuration = new Configuration({
-  apiKey: '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',
+  apiKey: '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',
 });
 const openai = new OpenAIApi(configuration);
 
