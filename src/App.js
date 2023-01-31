@@ -3,7 +3,6 @@ import Button from './components/button';
 import Input from './components/input';
 import Title from './components/title';
 import React from 'react';
-import { useState } from 'react';
 const { Configuration, OpenAIApi } = require("openai");
 
 const configuration = new Configuration({
