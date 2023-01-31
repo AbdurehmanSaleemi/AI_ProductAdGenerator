@@ -3,6 +3,7 @@ import Button from './components/button';
 import Input from './components/input';
 import Title from './components/title';
 import React from 'react';
+
 const { Configuration, OpenAIApi } = require("openai");
 
 const configuration = new Configuration({
@@ -43,7 +44,7 @@ function App() {
           <Title />
         </div>
         <div className='flex flex-row items-center justify-center w-full mt-24'>
-            <Input placeholder={'Describe your product...'} onChange={onChange}/>
+            <Input placeholder={'Write product description...'} onChange={onChange}/>
         </div>
         <div className='flex flex-row items-center justify-center w-full mt-12'>
           <Button onClick={onClick}/>
