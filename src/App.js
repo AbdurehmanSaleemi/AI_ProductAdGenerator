@@ -2,12 +2,13 @@ import './App.css';
 import Button from './components/button';
 import Input from './components/input';
 import Title from './components/title';
-import React from 'react';
+import React, { useEffect } from 'react';
+
 
 const { Configuration, OpenAIApi } = require("openai");
 
 const configuration = new Configuration({
-  apiKey: process.env.REACT_APP_OPENAI_API_KEY,
+  apiKey: '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',
 });
 const openai = new OpenAIApi(configuration);
 
@@ -33,6 +34,10 @@ function App() {
       setLoading(false);
     }
   };
+
+  useEffect(() => {
+    console.log(process.env.REACT_APP_OPENAI_API_KEY);
+  }, []);
 
   const onChange = (e) => {
     setValue(e.target.value);
